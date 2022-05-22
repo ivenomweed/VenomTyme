@@ -1,29 +1,45 @@
 {
   "name": "venomtyme",
-  "displayName": "VenomTyme Theme",
-  "description": "A Dark VSCode Theme Based On Catppuccin Palette.",
   "version": "1.0.0",
+  "displayName": "VenomTyme Theme",
+  "homepage": "https://draculatheme.com/",
+  "description": "A Dark VSCode Theme Based On Catppuccin Palette.",
   "publisher": "iVenomWeed",
   "license": "GPL3",
   "scripts": {
     "build": "node ./scripts/build.js",
     "lint": "node ./scripts/lint.js",
-    "package": "vsce package -o ./bin/dracula.vsix",
+    "package": "vsce package -o ./bin/venomtyme.vsix",
     "vscode:prepublish": "npm run build",
     "vsce-publish": "vsce publish"
   },
-  "devDependencies": {
-    "js-yaml": "^4.1.0",
-    "prettier": "^2.6.0",
-    "tinycolor2": "^1.4.2",
-    "vsce": "^2.7.0"
+  "maintainers": [
+    "iVenomWeed <ivenomweed+venomtyme@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivenomweed/VenomTyme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ivenomweed/VenomTyme/issues"
   },
   "engines": {
-    "vscode": "^1.67.0"
+    "vscode": "^1.67.2"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "venomtyme",
+    "dark",
+    "theme",
+    "color-theme"
+  ],
+  "icon": "icon.jpg",
+  "galleryBanner": {
+    "color": "#161320",
+    "theme": "dark"
+  },
   "contributes": {
     "themes": [
       {
@@ -32,5 +48,11 @@
         "path": "./theme/venomtyme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0",
+    "prettier": "^2.6.0",
+    "tinycolor2": "^1.4.2",
+    "vsce": "^2.7.0"
   }
 }
