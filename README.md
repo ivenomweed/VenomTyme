@@ -47,4 +47,4 @@
 
 ## License
 
-[GPL3 License](./LICENSE)
+[GPL3 License](https://github.com/ivenomweed/VenomTyme/blob/main/LICENSE)
