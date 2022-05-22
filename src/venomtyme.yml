@@ -901,6 +901,7 @@ tokenColors:
       - meta.function
       - storage.modifier
       - support.function
+      - support.type.property-name
     settings:
       fontStyle: italic
 
@@ -915,6 +916,7 @@ tokenColors:
       - meta.tag.without-attributes
       - meta.jsx.children
       - punctuation.definition.block
+      - string.unquoted.plain
     settings:
       fontStyle: normal
 
