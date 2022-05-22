@@ -1,0 +1,31 @@
+{
+	"name": "venomtyme",
+	"displayName": "VenomTyme",
+	"description": "A Dark VSCode Theme Based On Catppuccin Palette.",
+	"version": "1.0.0",
+	"scripts": {
+		"build": "node ./scripts/build.js",
+		"lint": "node ./scripts/lint.js"
+	},
+	"devDependencies": {
+		"js-yaml": "^4.1.0",
+		"prettier": "^2.6.0",
+		"tinycolor2": "^1.4.2",
+		"vsce": "^2.7.0"
+	},
+	"engines": {
+		"vscode": "^1.67.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "VenomTyme",
+				"uiTheme": "vs-dark",
+				"path": "./theme/venomtyme.json"
+			}
+		]
+	}
+}

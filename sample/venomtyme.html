@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Catppuccin</title>
+  </head>
+  <body>
+    <!-- Once upon a time... -->
+    <h1>Cats</h1>
+
+    <form>
+      <label for="location">Location</label>
+      <input type="text" name="location" value="Cataliputra" />
+      <label for="birthDate">Birth Date:</label>
+      <input type="number" name="birthDate" value="2016" />
+      <label for="currentDate">Death Date:</label>
+      <input type="number" name="currentDate" value="2022" />
+      <label for="catlikes">Catlikes:</label>
+      <input type="checkbox" name="catlikes" value="Tasty Food" checked />
+      <input type="checkbox" name="catlikes" value="Long Naps" checked />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      // ...there was a cat named Katlyn
+      const form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        const { birthDate, currentDate } = e.target;
+        const age = currentDate.value - birthDate.value;
+      });
+    </script>
+  </body>
+</html>

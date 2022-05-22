@@ -1,0 +1,33 @@
+/*
+ * Once upon a time...
+ */
+
+:root {
+  --birthDate: 2016px;
+  --currentDate: 2022px;
+}
+
+body {
+  background: #000;
+}
+
+/* ...there was a cat named Katlyn */
+
+#catppuccin {
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+  font-family: "Cataliputra";
+  height: calc(var(--currentDate) - var(--birthDate));
+}
+
+.cape {
+  background: #ff0000 !important;
+}
+
+@font-face {
+  font-family: "Cataliputra";
+  src: url("/location/Cataliputra.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
