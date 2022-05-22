@@ -912,6 +912,9 @@ tokenColors:
       - string.interpolated
       - string.quoted
       - text
+      - meta.tag.without-attributes
+      - meta.jsx.children
+      - punctuation.definition.block
     settings:
       fontStyle: normal
 

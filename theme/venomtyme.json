@@ -919,7 +919,10 @@
                 "constant",
                 "string.interpolated",
                 "string.quoted",
-                "text"
+                "text",
+                "meta.tag.without-attributes",
+                "meta.jsx.children",
+                "punctuation.definition.block"
             ],
             "settings": {
                 "fontStyle": "normal"
