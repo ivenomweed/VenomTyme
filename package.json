@@ -4,10 +4,13 @@
   "description": "A Dark VSCode Theme Based On Catppuccin Palette.",
   "version": "1.0.0",
   "publisher": "iVenomWeed",
-  "license": "MIT",
+  "license": "GPL3",
   "scripts": {
     "build": "node ./scripts/build.js",
-    "lint": "node ./scripts/lint.js"
+    "lint": "node ./scripts/lint.js",
+    "package": "vsce package -o ./bin/dracula.vsix",
+    "vscode:prepublish": "npm run build",
+    "vsce-publish": "vsce publish"
   },
   "devDependencies": {
     "js-yaml": "^4.1.0",
